@@ -1,0 +1,11 @@
+<h1><%= @task.name %></h1>
+<% if @task.status %>
+    <p> status: <%= "done" %></p>
+<% else %>
+    <p> status: <%= "undone" %> </p>
+<% end %>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %>
+<%= link_to 'Delete', task_path(@task), method: 'delete' %>
+<%= link_to 'Back to tasks', tasks_path %>

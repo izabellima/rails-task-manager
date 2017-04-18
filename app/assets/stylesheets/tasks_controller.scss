@@ -1,0 +1,30 @@
+// Place all the styles related to the TasksController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  color: gray;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1C9FA2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.status {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.container {
+  margin: auto;
+
+}
+
+.task-form {
+  text-decoration: none;
+  color: #1C9FA2;
+  font-family: 'Open Sans', sans-serif;
+}

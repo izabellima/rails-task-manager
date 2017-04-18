@@ -1,0 +1,13 @@
+<ul class="list-inline">
+  <% @tasks.each do |task| %>
+    <h3><%= link_to task.name, task_path(task) %></h3>
+    <% if task.status %>
+        <p class="status"> status: <%= "done" %></p>
+    <% else %>
+        <p class="status"> status: <%= "undone" %> </p>
+    <% end %>
+    <br>
+  <% end %>
+</ul>
+
+<%= link_to 'Add a new task', new_task_path(@task) %>

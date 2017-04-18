@@ -1,0 +1,11 @@
+<div class="task-form">
+
+  <%= form_for @task do |f| %>
+  <%= f.label 'Name' %>
+  <%= f.text_field 'name' %>
+  <%= f.label 'Status' %>
+  <%= f.check_box 'status' %>
+  <%= f.submit %>
+  <% end %>
+
+</div>
